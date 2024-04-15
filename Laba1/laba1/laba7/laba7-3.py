@@ -1,0 +1,17 @@
+
+from PIL import Image, ImageFilter
+im=Image.open('1.jpg')
+im2=Image.open('2.jpg')
+im3=Image.open('3.jpg')
+im4=Image.open('4.jpg')
+im5=Image.open('5.jpg')
+fil=im.filter(ImageFilter.EDGE_ENHANCE)
+fil2=im2.filter(ImageFilter.EMBOSS)
+fil3=im3.filter(ImageFilter.CONTOUR)
+fil4=im4.filter(ImageFilter.DETAIL)
+fil5=im5.filter(ImageFilter.FIND_EDGES)
+fil.save('11.png')
+fil2.save('22.png')
+fil3.save('33.png')
+fil4.save('4.png')
+fil5.save('5.png')
